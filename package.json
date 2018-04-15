@@ -1,0 +1,25 @@
+{
+  "name": "IPFS_Mobile",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "test": "jest",
+    "buildIOS": "react-native bundle --dev false --assets-dest ./ios_bundle/JSCode --entry-file App.js --platform ios --bundle-output ios_bundle/JSCode/main.jsbundle"
+  },
+  "dependencies": {
+    "nodejs-mobile-react-native": "^0.1.4",
+    "react": "16.3.0-rc.0",
+    "react-native": "0.54.3",
+    "react-native-fs": "^2.9.11"
+  },
+  "devDependencies": {
+    "babel-jest": "22.4.3",
+    "babel-preset-react-native": "4.0.0",
+    "jest": "22.4.3",
+    "react-test-renderer": "16.3.0-rc.0"
+  },
+  "jest": {
+    "preset": "react-native"
+  }
+}

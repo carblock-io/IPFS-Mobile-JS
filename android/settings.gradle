@@ -1,0 +1,7 @@
+rootProject.name = 'IPFS_Mobile'
+include ':react-native-fs'
+project(':react-native-fs').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-fs/android')
+include ':nodejs-mobile-react-native'
+project(':nodejs-mobile-react-native').projectDir = new File(rootProject.projectDir, '../node_modules/nodejs-mobile-react-native/android')
+
+include ':app'
