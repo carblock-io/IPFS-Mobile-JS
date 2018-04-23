@@ -18,6 +18,9 @@ const dealWithMsg = function(msg){
           repo: ipfsRepoPath,
           init: true,
           pass: 'f9bb081820125cf55e0d1bc96493d292ac0be0ce68ea05051a20d3200f28563c',
+          Bootstrap: [
+              '/ip4/47.75.72.6/tcp/4001/ipfs/QmXXyAoF2JgdF4YT1B238BQauPRmiFrim6PNRcrZHXkGh2'
+          ],
       });
       fileNode.on('ready',()=>{
           rn_bridge.channel.send(JSON.stringify({msgType:'ready'}));

@@ -20,7 +20,7 @@ class FileNode extends EventEmitter{
 
         this._ipfs.on('ready', () => {
             self.getIPFSId();
-            // self.getIPFSPeerInfo();
+            self.getIPFSPeerInfo();
             self.emit('ready');
         })
     }
@@ -39,9 +39,8 @@ class FileNode extends EventEmitter{
 
     addSuperNode(){
         this._ipfs.bootstrap.add('/ip4/47.75.72.6/tcp/4001/ipfs/QmXXyAoF2JgdF4YT1B238BQauPRmiFrim6PNRcrZHXkGh2');
-        // this._ipfs.swarm.connect('/ip4/47.75.72.6/tcp/4001/ipfs/QmXXyAoF2JgdF4YT1B238BQauPRmiFrim6PNRcrZHXkGh2',(e,r)=>{
-        //     console.log(e);
-        //     console.log(r);
+        // this._ipfs.swarm.connect('/ip4/47.75.72.6/tcp/4001/ipfs/QmXXyAoF2JgdF4YT1B238BQauPRmiFrim6PNRcrZHXkGh2',()=>{
+        //     console.log("链接节点成功!");
         // })
     }
 
